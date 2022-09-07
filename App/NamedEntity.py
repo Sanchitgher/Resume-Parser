@@ -7,7 +7,7 @@ class NamedEntityService(object):
     def get_model(cls):
         """Get the model object for this instance, loading it if it's not already loaded."""
         if cls.model is None:
-            cls.model = spacy.load('./My_trainedmodel_61')
+            cls.model = spacy.load('My_trainedmodel_61')
         return cls.model
 
     
