@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style >
+      h1
+      {
+        text-align:center;
+        color: black;
+        text-decoration: underline;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <h1>Parsed output of the resume</h1>
+</head>
+<body>
+  <style >
+    p{
+      text-align:center;
+    }
+  </style>
+<p>
+{% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+</p>
+</body>
+</html>
