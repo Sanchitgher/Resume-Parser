@@ -69,7 +69,7 @@ def predict_entity():
 
     return flask.render_template('result.html',  tables=[df.to_html(classes='data')], titles=df.columns.values)
 
-     return Response(json.dumps(entity_dict), status=200, mimetype='application/json')
+    return Response(json.dumps(entity_dict), status=200, mimetype='application/json')
     
 
 
