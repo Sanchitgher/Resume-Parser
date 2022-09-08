@@ -9,6 +9,7 @@ from werkzeug.utils import secure_filename
 import os
 import pandas as pd
 import sys, fitz
+import pickle
 
 def pdf_to_text(filepath):
   '''Extracts the text data from the pdf'''
@@ -25,7 +26,7 @@ class NamedEntityService(object):
     def get_model(cls):
         """Get the model object for this instance, loading it if it's not already loaded."""
         if cls.model is None:
-            cls.model = spacy.load('My_trainedmodel_61')
+            cls.model = pickle.load(open('my_trainedpickelmodel_61.pkl', 'rb'))
         return cls.model
 
     
@@ -69,7 +70,7 @@ def predict_entity():
 
     return flask.render_template('result.html',  tables=[df.to_html(classes='data')], titles=df.columns.values)
 
-    return Response(json.dumps(entity_dict), status=200, mimetype='application/json')
+    #return Response(json.dumps(entity_dict), status=200, mimetype='application/json')
     
 
 
