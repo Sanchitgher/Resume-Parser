@@ -1,6 +1,6 @@
 # Resume-Parser using NER
 
-• This work proposes a machine learning technique to parse resumes using spacy and transformer, two sophisticated natural language processing (NLP) frameworks /n
+• This work proposes a machine learning technique to parse resumes using spacy and transformer, two sophisticated natural language processing (NLP) frameworks 
 • Python language was used because of its wide range of libraries. Spacy was used for NLP task such as tokenization, text categorization
 • The use of NER and Roberta transformer using Spacy, with a very potent combination of NLP and ML, was used in this project for both installation and training as well as to extract the entities from resumes
 • This git repository contains the dataset file as train_data.pkl, requirement.txt and a notebook file as
@@ -13,5 +13,16 @@ How to run the code:
 • Install the requirement.txt file which can be found in git repository on command line using “pip install -
 r requirements.txt”
 • Run the app.py in command line using “python app.py” which will run the app.
+
+10.SOURCE OF CODE
+Links for code references:
+• https://spacy.io/
+• https://github.com/pallets/flask
+• https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
+• https://pymupdf.readthedocs.io/en/latest/
+• https://html.com/
+• https://spacy.io/usage/embeddings-transformers
+• https://spacy.io/api/docbin#_title
+• https://pandas.pydata.org/
 
 "# Resume-Parser" 
